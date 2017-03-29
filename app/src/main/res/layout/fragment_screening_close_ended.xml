@@ -1,0 +1,252 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ansteph.cct.healthscreener.quizboard.healthscreening.ScreeningCloseEnded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="@color/txtBoby"
+        android:background="@drawable/app_gradient"
+        android:textSize="24sp"
+        android:text="some text" />
+        <Button
+            android:id="@+id/imgbtnBack"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:textSize="20dp"
+            android:background="@drawable/app_gradient"
+            android:drawableEnd="@mipmap/ic_back"
+            android:drawableRight="@mipmap/ic_back"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtCatTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_checked"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:background="@color/catHighlight"
+        android:textSize="30dp"
+        android:text="some text" />
+
+    <LinearLayout
+        android:id="@+id/linQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical" >
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtReferral"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/ic_refer"
+            android:gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:text="Referral"
+            android:textColor="@color/txtBoby"
+            android:background="@drawable/app_gradient"
+            android:textSize="30dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Referral: "
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radrefYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radrefNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If yes, to where: "
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editReferee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapSentences" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of referral (d/m/yyyy): "
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtdateref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/2014 "
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btngetdateref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:src="@mipmap/ic_calendar" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of follow-up (d/m/yyyy): "
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/txtdatefoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/2014 "
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btngetdatefoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:src="@mipmap/ic_calendar" />
+
+
+        </TableRow>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/btnshout"
+            android:text="Save"
+            android:drawableTop="@mipmap/ic_save"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/backgroundbtn"
+            android:text="Cancel"
+            android:drawableTop="@mipmap/ic_cancel" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DrawerLayout"
+    android:elevation="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ansteph.healthscreen.StartUp$PlaceholderFragment">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundstartup"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/tech_band" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/logo_shadow" />
+    </FrameLayout>
+
+
+
+
+    <ansteph.cct.healthscreener.slidingmenu.adapter.DashboardLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:text="Register new pupil"
+            android:drawableTop="@mipmap/ic_addpup" />
+
+        <Button  android:id="@+id/btnRegisterSchool"
+            style="@style/DashboardButton"
+            android:text="Register new school"
+            android:drawableTop="@mipmap/ic_school" />
+
+        <Button  android:id="@+id/btnEditPupil"
+            style="@style/DashboardButton"
+            android:text="Edit pupil"
+            android:drawableTop="@mipmap/ic_edit" />
+
+
+        <Button  android:id="@+id/btnEditSchool"
+            style="@style/DashboardButton"
+            android:text="Edit school"
+            android:drawableTop="@mipmap/ic_editschool" />
+
+        <Button  android:id="@+id/btnSearch"
+            style="@style/DashboardButton"
+            android:text="Select a pupil to assess"
+            android:drawableTop="@mipmap/ic_search" />
+
+        <Button  android:id="@+id/btnExport"
+            style="@style/DashboardButton"
+            android:text="Export data"
+            android:drawableTop="@mipmap/ic_export" />
+
+</ansteph.cct.healthscreener.slidingmenu.adapter.DashboardLayout>
+
+</LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:scrollbars="vertical"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.v4.widget.DrawerLayout>

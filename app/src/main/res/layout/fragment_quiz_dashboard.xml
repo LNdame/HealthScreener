@@ -1,0 +1,85 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:background="@drawable/app_gradient"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+
+    android:orientation="vertical"
+    tools:context="ansteph.cct.healthscreener.quizboard.QuizDashboard">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/ic_dashboard"
+        android:gravity="center_vertical"
+        android:padding="25dp"
+        android:text="Tap on an assessment to start"
+
+        android:textSize="18dp"/>
+
+    <ansteph.cct.healthscreener.slidingmenu.adapter.DashboardLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="900dp"
+         >
+
+        <Button
+            android:id="@+id/btnOral"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:drawableTop="@mipmap/ic_dental"
+            android:text="Oral Health" />
+
+        <Button
+            android:id="@+id/btnVision"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:drawableTop="@mipmap/ic_vision"
+            android:text="Vision Health" />
+
+
+        <Button
+            android:id="@+id/btnHearing"
+            style="@style/DashboardButton"
+            android:layout_width="match_parent"
+            android:drawableTop="@mipmap/ic_hearing"
+            android:text="Hearing Health" />
+
+
+        <Button android:id="@+id/btnphysical"
+            style="@style/DashboardButton"
+            android:text="Physical Health"
+            android:drawableTop="@mipmap/ic_physical" />
+
+        <Button android:id="@+id/btnCalBmi"
+            style="@style/DashboardButton"
+            android:text="Calculate BMI"
+            android:drawableTop="@mipmap/ic_calculator" />
+
+        <Button android:id="@+id/btnChronicDisease"
+            style="@style/DashboardButton"
+            android:text="Chronic Disease"
+            android:drawableTop="@mipmap/ic_chronic" />
+
+        <Button android:id="@+id/btnMentalIll"
+            style="@style/DashboardButton"
+            android:text="Mental Illness"
+            android:drawableTop="@mipmap/ic_mental"
+            android:visibility="gone"/>
+
+
+
+
+
+
+    </ansteph.cct.healthscreener.slidingmenu.adapter.DashboardLayout>
+
+
+</LinearLayout>
+</ScrollView>

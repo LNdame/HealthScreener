@@ -1,0 +1,84 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/backgroundstartup"
+android:orientation="vertical"
+tools:context="ansteph.cct.healthscreener.Account">
+
+<include
+    android:id="@+id/tool_bar"
+    layout="@layout/tool_bar"
+    ></include>
+
+
+<FrameLayout android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+
+        android:layout_gravity="center"
+        android:src="@drawable/logo_shadow" />
+</FrameLayout>
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+
+    android:layout_weight="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For a new account or forgotten password please send your details to the administrator at "
+            android:textSize="34sp"
+            android:layout_margin="5dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="info@healthscreener.co.za"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_margin="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+
+
+        <Button
+            android:id="@+id/btnbacktol"
+            android:background="@color/btnshout"
+            android:layout_width="570dp"
+            android:textColor="#fff"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:textSize="34sp"
+            android:text="Back to log In"
+            android:layout_gravity="center"
+            android:onClick="btnLogIn_OnClick"/>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>

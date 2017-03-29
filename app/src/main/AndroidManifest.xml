@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ansteph.cct.healthscreener" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".entity.ControllerQuiz"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartUp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RegisterPupil"
+            android:label="@string/title_activity_register_pupil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RegisterSchool"
+            android:label="@string/title_activity_register_school"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditPupil"
+            android:label="@string/title_activity_edit_pupil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchPupil"
+            android:label="@string/title_activity_search_pupil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ExportData"
+            android:label="@string/title_activity_export_data"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EditSchool"
+            android:label="@string/title_activity_edit_school"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".quizboard.QuizActivity"
+            android:label="@string/title_activity_quiz"
+            android:parentActivityName=".StartUp"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ansteph.cct.healthscreener.StartUp" />
+        </activity>
+        <activity
+            android:name=".report.Report"
+            android:label="@string/title_activity_report"
+            android:parentActivityName=".StartUp"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ansteph.cct.healthscreener.StartUp" />
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="@string/title_activity_sign_in"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account" >
+        </activity>
+    </application>
+
+</manifest>

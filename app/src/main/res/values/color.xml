@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!--Color palette-->
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="redbackgroung">#EE3B3B</color>
+
+    <color name="topbannerbackground">#8E2323</color>
+
+    <color name="backgroungLayout">#ffffff</color>
+
+    <color name="listviewbackgrnd">#FFEFD5</color>
+    <color name="btnshout">#CD6839</color>
+    <color name="backgroundbtn">#FCD59C</color>
+
+    <color name="txtBoby">#ffffff</color>
+    <!--End Color palette-->
+
+    <color name="catHighlight" >#CCCCCC</color>
+    <!-- new color added with the dashboard -->
+    <color name="actionbar_text">#ff29549f</color>
+
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+
+    <color name="accent_1">#ff29549f</color>
+    <color name="hyperlink">#ffff549f</color>
+
+    <color name="whats_on_separator">#4d000000</color>
+
+    <color name="all_track_color">#ff222222</color>
+
+    <color name="block_column_1">#ff0fabff</color>
+    <color name="block_column_2">#ffdf1831</color>
+
+    <color name="ColorPrimary">#C73F17</color>
+    <color name="ColorPrimaryDark">#EE8262</color>
+    <color name="tabsScrollColor">#8a140e</color>
+
+
+    <color name="Colorband">#FFDAB9</color>
+    <bool name="default_circle_indicator_centered">true</bool>
+
+
+</resources>

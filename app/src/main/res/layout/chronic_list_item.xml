@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal" 
+    android:padding="6dp">
+    <View
+        android:id="@+id/view1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"  android:background="@color/backgroundbtn" android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/txtAttepmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/view1"
+        android:gravity="center_vertical"
+        android:text="[ 0 ]"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txtscreentext"
+        android:layout_width="wrap_content"
+        android:layout_height="32sp"
+        android:layout_alignBottom="@+id/txtAttepmt"
+        android:layout_toRightOf="@+id/view1"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Screen for diseasegp"
+        android:textSize="23sp" />
+   
+</RelativeLayout>

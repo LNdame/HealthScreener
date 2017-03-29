@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Health Screener</string>
+
+
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_showReport">Report</string>
+    <string name="action_help">Help</string>
+    <string name="TakQuiz">Take Quiz</string>
+    <string name="register">Register a Pupil</string>
+    <string name="activity1">Activity 1</string>
+    <string name="activity2">Activity 2</string>
+    <string name="action_home">Home</string>
+    <string name="action_about">About</string>
+    <string name="action_person">Pupil</string>
+    <string name="peo_Supervisor">Prof. Darelle van Greunen</string>
+    <string name="peo_leadDeveloper">Loic A. Ndame</string>
+    <string name="action_pupil_name">p_name</string>
+
+
+
+    <!-- chronic disease -->
+    <string-array name="chronic_disease">
+        <item>Assess for Tuberculosis</item>
+        <item>Assess for Asthma</item>
+        <item>Assess for Epilepsy</item>
+        <item>Assess for Allergies</item>
+        <item>Assess for Diabetes</item>
+        <item>Assess for Cerebral Palsy</item>
+        <item>Assess for Anaemia and Haemoglobin</item>
+
+    </string-array>
+
+    <!-- Nav Drawer Menu items  <item>Help</item> -->
+    <string-array name="nav_drawer_items">
+        <item>Dashboard</item>
+        <item>Oral Health</item>
+        <item>Hearing Health</item>
+        <item>Vision Health</item>
+        <item>Physical Health</item>
+        <item>BMI Calculator</item>
+        <item>Chronic Disease</item>
+
+    </string-array>
+
+    <string-array name="nav_drawer_start_items">
+        <item>View Report</item>
+        <item>Log out</item>
+
+
+    </string-array>
+
+    <!-- nav drawer list items icons  <item>@mipmap/ic_help</item>-->
+    <array name="nav_drawer_icons">
+        <item>@mipmap/ic_dashboard</item>
+        <item>@mipmap/ic_dental</item>
+        <item>@mipmap/ic_hearing</item>
+        <item>@mipmap/ic_vision</item>
+        <item>@mipmap/ic_physical</item>
+        <item>@mipmap/ic_calculator</item>
+        <item>@mipmap/ic_chronic</item>
+
+    </array>
+
+    <array name="nav_drawer_start_icons">
+        <item>@mipmap/ic_report</item>
+        <item>@mipmap/ic_logout</item>
+
+
+    </array>
+
+    <array name="nav_body_girl_pic">
+        <item>@drawable/cutt_out_female_1</item>
+        <item>@drawable/cutt_out_female_2</item>
+        <item>@drawable/cutt_out_female_3</item>
+        <item>@drawable/cutt_out_female_4</item>
+        <item>@drawable/cutt_out_female_5</item>
+        <item>@drawable/cutt_out_female_6</item>
+        <item>@drawable/cutt_out_female_7</item>
+    </array>
+
+    <array name="nav_body_boy_pic">
+        <item>@drawable/cutt_out_male_1</item>
+        <item>@drawable/cutt_out_male_2</item>
+        <item>@drawable/cutt_out_male_3</item>
+        <item>@drawable/cutt_out_male_4</item>
+        <item>@drawable/cutt_out_male_5</item>
+        <item>@drawable/cutt_out_male_6</item>
+        <item>@drawable/cutt_out_male_7</item>
+
+    </array>
+
+    <!-- content descriptioin -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_start_up">Health Screener</string>
+    <string name="title_activity_register_pupil">Register Pupil</string>
+    <string name="title_activity_search_pupil">Search Pupil</string>
+
+    <!-- gender array -->
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="title_activity_register_school">Register a new school</string>
+    <string name="title_activity_edit_pupil">Edit Pupil</string>
+    <string name="title_activity_export_data">ExportData</string>
+    <string name="title_activity_edit_school">Edit School</string>
+    <string name="title_activity_splashscreen">Splashscreen</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_quiz">Assessment</string>
+
+    <string name="title_section1">Case Management</string>
+    <string name="title_section2">Pupil Assessed</string>
+    <string name="title_section3">BMI</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Go to Home screen</string>
+    <string name="title_activity_report">Report</string>
+    <string name="title_activity_sign_in">Log In</string>
+    <string name="title_activity_account">Account</string>
+
+
+</resources>

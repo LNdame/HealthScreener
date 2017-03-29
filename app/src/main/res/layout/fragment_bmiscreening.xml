@@ -1,0 +1,541 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="ansteph.cct.healthscreener.quizboard.healthscreening.BMIScreening">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:drawableLeft="@mipmap/ic_launcher"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="@color/txtBoby"
+        android:background="@drawable/app_gradient"
+        android:textSize="24sp"/>
+        <Button
+            android:id="@+id/imgbtnBack"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+
+            android:textSize="20dp"
+            android:background="@drawable/app_gradient"
+            android:drawableEnd="@mipmap/ic_back"
+            android:drawableRight="@mipmap/ic_back"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linQuestion"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Enter height (centimeters)"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Enter weight(kilograms)"
+                    android:textSize="18dp"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editHeight"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="0.0"
+                    android:ems="10"
+                    android:inputType="numberDecimal"/>
+
+                <EditText
+                    android:id="@+id/editWeight"
+                    android:layout_weight="1"
+                    android:hint="0.0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"/>
+            </TableRow>
+
+
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:drawableTop="@mipmap/ic_calculator"
+                    android:id="@+id/btnCalculate"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="15dp"
+                    android:background="@color/btnshout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Calculate" />
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:drawableTop="@mipmap/ic_clear"
+                    android:layout_weight="1"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="15dp"
+                    android:background="@color/backgroundbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Clear" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Your BMI is:"
+                    android:textSize="28dp"/>
+
+                <TextView
+                    android:id="@+id/txtBmi"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="0.00"
+                    android:textSize="28dp"/>
+
+            </TableRow>
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            >
+            <TableRow
+                android:id="@+id/tableRow"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Weight Status"
+                    android:background="@drawable/border"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="BMI"
+                    android:background="@drawable/border"
+                    android:textSize="18dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tblUnder"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+
+                    android:text="Underweight"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+
+                    android:text="Below 18.5"
+                    android:textSize="18dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tblNormal"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Normal"
+
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="18.5 - 25"
+
+                    android:textSize="18dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tblOver"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Overweight"
+
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="25 - 29.9"
+
+                    android:textSize="18dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tblObe"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Obese"
+
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="30 - 40"
+
+                    android:textSize="18dp"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tblMorObe"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Morbidly Obese"
+
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="40 - Above"
+
+                    android:textSize="18dp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tblComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+
+                <TextView
+                    android:id="@+id/txtComment"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Comment"
+                    android:textSize="18dp"/>
+
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/instru"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textStyle="italic"
+                android:text="(Please scroll for more body type ->)"
+                android:textSize="10dp"/>
+
+
+        </TableLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <GridLayout
+        android:id="@+id/buttongrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="7"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/bobImg1"
+            android:drawableTop="@drawable/cutt_out_male_1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="#FFDAB9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Thin"/>
+        <Button
+            android:id="@+id/bobImg2"
+            android:drawableTop="@drawable/cutt_out_male_2"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:text="2. Thin"/>
+        <Button
+            android:id="@+id/bobImg3"
+            android:drawableTop="@drawable/cutt_out_male_3"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:text="3. Thinner than average"/>
+        <Button
+            android:id="@+id/bobImg4"
+            android:drawableTop="@drawable/cutt_out_male_4"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:text="4. Average"/>
+        <Button
+            android:id="@+id/bobImg5"
+            android:drawableTop="@drawable/cutt_out_male_5"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:text="5. Larger than average"/>
+        <Button
+            android:id="@+id/bobImg6"
+            android:drawableTop="@drawable/cutt_out_male_6"
+            android:layout_column="5"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:text="6. Large"/>
+        <Button
+            android:id="@+id/bobImg7"
+            android:drawableTop="@drawable/cutt_out_male_7"
+            android:layout_column="6"
+            android:layout_row="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFDAB9"
+            android:text="7. Large"/>
+
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+        </HorizontalScrollView>
+
+        <TableRow
+            android:id="@+id/tableRow67"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="You have selected:"
+                android:textSize="28dp"/>
+
+            <TextView
+                android:id="@+id/txtbodytype"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="----"
+                android:textSize="28dp"/>
+
+        </TableRow>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/btnshout"
+            android:text="Save"
+            android:drawableTop="@mipmap/ic_save"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:paddingTop="25dp"
+            android:paddingBottom="15dp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/backgroundbtn"
+            android:text="Cancel"
+            android:drawableTop="@mipmap/ic_cancel" />
+    </LinearLayout>
+
+</LinearLayout>
+   </ScrollView>
